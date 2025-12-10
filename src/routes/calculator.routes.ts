@@ -10,7 +10,7 @@ interface CalculatorRequest {
 export async function calculatorRoutes(fastify: FastifyInstance) {
     fastify.post<{ Body: CalculatorRequest }>(
         '/tools/calculator', //Especificar ruta
-
+ 
         {
             schema: {
                 description: "Realiza operaciones de calculadora básicas usando MCP",
